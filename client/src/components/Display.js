@@ -9,8 +9,10 @@ class Display extends React.Component {
         console.log(this.props.propsToDisplay)
         return (
             <>
-            {this.props.propsToDisplay.map(player => 
-              <div key= {player.id}>{player.name}</div>)}
+              <div className = "App">
+              {this.props.propsToDisplay.map(player => 
+                <div key= {player.id}>{player.name}</div>)}
+              </div>
             </>
           );
     }

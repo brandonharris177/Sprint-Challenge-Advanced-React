@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import useDarkMode from './components/useDarkMode';
 
-test ('darkMode Changes Class'), () => {
-  expect(useDarkMode(false)).toBe(false)
-  expect(useDarkMode(false)).toBe(false)
-}
+test('should have text [player name]',  async ()=>{
+  const {findByText} = await render(<App />)
+  findByText(/[player name]/i)
+})
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

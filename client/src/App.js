@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import axios from 'axios'
-import Display from './components/Display'
-import NavBar from './components/navBar'
+import axios from 'axios';
+import Display from './components/Display';
+import NavBar from './components/navBar';
 
 class App extends React.Component {
   constructor() {
@@ -21,21 +21,15 @@ class App extends React.Component {
   }
 
   render () {
-    // console.log(this.state.user)
-    // console.log(this.state.followers)
     return (
       <>
-        <NavBar />
-        <Display propsToDisplay = {this.state.players}/>
+        <div className = "App">
+          <NavBar />
+          <Display propsToDisplay = {this.state.players}/>
+        </div>
       </>
     );
   }
 }
 
 export default App;
-
-
-// {this.players.map(player => 
-//  <div key = {player.id}>
-//    <div>{player.name}</div>
-//  </div>

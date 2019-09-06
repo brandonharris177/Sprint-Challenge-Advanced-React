@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios'
 import Display from './components/Display'
+import NavBar from './components/navBar'
 
 class App extends React.Component {
   constructor() {
@@ -24,6 +25,7 @@ class App extends React.Component {
     // console.log(this.state.followers)
     return (
       <>
+        <NavBar />
         <Display propsToDisplay = {this.state.players}/>
       </>
     );

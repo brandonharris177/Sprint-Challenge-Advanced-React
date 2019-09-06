@@ -9,6 +9,7 @@ const Navbar = () => {
     e.preventDefault();
     setDarkMode(!darkMode);//this is a switch, if darkmode is on it turns it off, if it is off it turns it on
   };
+  
   return (
     <nav className="navbar">
       <div className="dark-mode__toggle">

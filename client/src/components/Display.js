@@ -6,7 +6,7 @@ class Display extends React.Component {
     }
 
     render() {
-        console.log(this.props.propsToDisplay)
+        // console.log(this.props.propsToDisplay)
         return (
             <>
               <div className = "App">

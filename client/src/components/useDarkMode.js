@@ -6,10 +6,10 @@ const useDarkMode = (initalValue) => {
     useEffect(() => {
         if (darkMode) {
             document.body.classList.add('dark-mode');
-            console.log(`dark-mode added`)
+            // console.log(`dark-mode added`)
         } else {
             document.body.classList.remove('dark-mode');
-            console.log(`dark-mode removed`)
+            // console.log(`dark-mode removed`)
         }
     }, [darkMode])
 

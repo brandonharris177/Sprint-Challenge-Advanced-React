@@ -35,8 +35,7 @@
 }
 
 .dark-mode {
-  color: #fff;
-  background-color: #313843;
+  background-image: linear-gradient(red, white, blue);
 }
 
 .App {

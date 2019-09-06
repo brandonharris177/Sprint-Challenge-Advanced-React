@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import useDarkMode from './useDarkMode';
+import useAmericaMode from './useAmericaMode';
 import '../App.css';
 
 const Navbar = () => {             
-  // const [darkMode, setDarkMode] = useState(false); //
-  const [darkMode, setDarkMode] = useDarkMode(false);//this calls the useDarkMode hook and sets the inital value to false (Dark mode off)
+  // const [americaMode, setAmericaMode] = useState(false); //
+  const [americaMode, setAmericaMode] = useAmericaMode(false);//this calls the useAmericaMode hook and sets the inital value to false (Dark mode off)
   const toggleMode = e => {
     e.preventDefault();
-    setDarkMode(!darkMode);//this is a switch, if darkmode is on it turns it off, if it is off it turns it on
+    setAmericaMode(!americaMode);//this is a switch, if darkmode is on it turns it off, if it is off it turns it on
   };
   
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}//flips the switch
-          className={darkMode ? 'toggle toggled' : 'toggle'}//if dark mode is on turn it off its its off turn it on
+          className={americaMode ? 'toggle toggled' : 'toggle'}//if dark mode is on turn it off its its off turn it on
         />
       </div>
     </nav>

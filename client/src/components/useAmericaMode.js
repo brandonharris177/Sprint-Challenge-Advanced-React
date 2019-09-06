@@ -1,19 +1,19 @@
 import {useState, useEffect} from 'react';
 
-const useDarkMode = (initalValue) => {
-    const [darkMode, setDarkMode] = useState(initalValue); 
+const useAmericaMode = (initalValue) => {
+    const [americaMode, setAmericaMode] = useState(initalValue); 
     // console.log(trueOrFalse)
     useEffect(() => {
-        if (darkMode) {
+        if (americaMode) {
             document.body.classList.add('dark-mode');
             // console.log(`dark-mode added`)
         } else {
             document.body.classList.remove('dark-mode');
             // console.log(`dark-mode removed`)
         }
-    }, [darkMode])
+    }, [americaMode])
 
-    return [darkMode, setDarkMode];
+    return [americaMode, setAmericaMode];
   };
 
-  export default useDarkMode
+  export default useAmericaMode
